@@ -50,6 +50,7 @@ Copy
 Edit
 git clone https://github.com/your-username/ecommerce-store.git
 Open index.html in a browser to view the project.
+
 Acknowledgments
 🙌 Huge thanks to Tech2 etc for the amazing tutorial!
 🔗 Check out their channel: Tech2 etc YouTube
