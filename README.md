@@ -1,6 +1,7 @@
 # E-Commerce store
  
-![image](https://github.com/user-attachments/assets/6a04ef17-3ef9-42ed-b46b-ff5b941361c7)
+![image](https://github.com/user-attachments/assets/010d6b77-420f-4864-8c3b-a467d2ff4d44)
+
 
 
 E-Commerce Store Front-End
