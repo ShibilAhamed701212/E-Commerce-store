@@ -13,6 +13,7 @@ The layout follows the **Tech2 etc** YouTube tutorial for an HTML/CSS e-commerce
 - Product grid with brand, name, star rating and price for each product.
 - Product details page with an image gallery: clicking a thumbnail swaps the main image.
 - Shop page: the first product card links to the product details page.
+- Keyboard and screen-reader basics: the mobile menu icon opens with Enter or Space, and icon-only links and form fields have accessible names.
 - Contact page with an embedded Google Map, contact details and a message form.
 - About page with an autoplaying, muted product video (`img/about/1.mp4`).
 - Cart page showing a sample cart table, coupon box and cart totals.
@@ -33,7 +34,7 @@ These parts are layout only and have no behaviour behind them:
 | Markup | HTML5 |
 | Styling | CSS3 (Flexbox, media queries), single `style.css` |
 | Scripting | Vanilla JavaScript (`script.js` plus a short inline script on `sproduct.html`) |
-| Icons | Font Awesome 5.10 Pro CSS, loaded from `pro.fontawesome.com` |
+| Icons | Font Awesome 5.15.4 Free, loaded from cdnjs with Subresource Integrity |
 | Font | Spartan, loaded from Google Fonts |
 | Map | Google Maps embed iframe |
 
@@ -106,12 +107,18 @@ Mobile navigation (390px wide):
 - The header logo linked to `#`; it now links to the home page.
 - E-mail fields in the newsletter and contact form use `type="email"`, so browsers validate the format.
 
+## Second-pass fixes
+
+- **Icons no longer depend on the Font Awesome Pro CDN.** The pages loaded Font Awesome 5.10 Pro from `pro.fontawesome.com`, which is meant for Pro licence holders. They now load Font Awesome 5.15.4 Free from cdnjs with an `integrity` hash. Pro-only styles were swapped for the closest free ones: light and regular icons such as the cart, bag, close and phone icons became solid. Two CSS rules set a font weight directly on icons (`.cart` and `#pagination a i`), which would have hidden the solid icons. Those weights are removed.
+- **Mobile menu works from the keyboard.** The menu icon has `role="button"`, is focusable and opens with Enter or Space. The close link no longer jumps the page back to the top.
+- **Accessible names.** Cart, close, add-to-cart, remove and next-page links, the menu icon, the map iframe and the quantity, size, coupon, newsletter and contact fields now have labels.
+- **Invalid HTML fixed.** The duplicate `product1` id on the home page is gone (the New Arrivals grid is now `#new-arrivals`, with the same styles). The contact details list uses a `<ul>`. Empty `id`/`name` attributes are removed, raw `&` characters are escaped, and buttons have an explicit `type`.
+- The cart page banner reused the contact page text; it now describes the cart. The footer "View Cart" link points to `cart.html`. "Accessoriess" is spelled correctly.
+
 ## Known limitations
 
-- Icons come from the Font Awesome **Pro** CDN, which is intended for Pro licence holders. Several icons used (light `fal` icons, `fa-shopping-bag`) are Pro-only, so switching to the free CDN would require choosing replacement icons.
 - The about-page video is H.264. It plays in Chrome, Edge, Firefox and Safari, but not in open-source Chromium builds without proprietary codecs.
-- `index.html` uses the id `product1` on two sections (the CSS targets that id), and `contact.html` places `<li>` elements directly inside a `<div>`. Browsers render both fine but they are not valid HTML.
-- The cart page reuses the contact page's banner text ("#let's_talk").
+- The menu close link sits directly inside the navigation `<ul>` rather than in an `<li>`. Moving it would change how the mobile menu is laid out, so it stays as is; browsers render it fine.
 - Only the first product card on the shop page links to the product details page, and the details page always shows the same product.
 - There are no automated tests or CI in this repository.
 

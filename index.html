@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <title>Home | E-Commerce Store</title>
@@ -25,14 +28,21 @@
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li id="lg-bag">
-            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <a href="cart.html" aria-label="Cart"><i class="fas fa-shopping-bag"></i></a>
           </li>
-          <a href="#" id="close"><i class="far fa-times"></i></a>
+          <a href="#" id="close" aria-label="Close menu"><i class="fas fa-times"></i></a>
         </ul>
       </div>
       <div id="mobile">
-        <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
-        <i id="bar" class="fas fa-outdent"></i>
+        <a href="cart.html" aria-label="Cart"><i class="fas fa-shopping-bag"></i></a>
+        <i
+          id="bar"
+          class="fas fa-outdent"
+          role="button"
+          tabindex="0"
+          aria-label="Open menu"
+          aria-controls="navbar"
+        ></i>
       </div>
     </section>
 
@@ -40,8 +50,8 @@
       <h4>Trade-in-offer</h4>
       <h2>Super value deals</h2>
       <h1>On all product</h1>
-      <p>Save more with coupons & up to 70% off!</p>
-      <button>Shop Now</button>
+      <p>Save more with coupons &amp; up to 70% off!</p>
+      <button type="button">Shop Now</button>
     </section>
 
     <section id="feature" class="section-p1">
@@ -89,7 +99,7 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href="#" aria-label="Add to cart"><i class="fas fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
           <img src="img/products/f2.jpg" alt="" />
@@ -105,7 +115,7 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href="#" aria-label="Add to cart"><i class="fas fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
           <img src="img/products/f3.jpg" alt="" />
@@ -121,7 +131,7 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href="#" aria-label="Add to cart"><i class="fas fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
           <img src="img/products/f4.jpg" alt="" />
@@ -137,7 +147,7 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href="#" aria-label="Add to cart"><i class="fas fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
           <img src="img/products/f5.jpg" alt="" />
@@ -153,7 +163,7 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href="#" aria-label="Add to cart"><i class="fas fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
           <img src="img/products/f6.jpg" alt="" />
@@ -169,7 +179,7 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href="#" aria-label="Add to cart"><i class="fas fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
           <img src="img/products/f7.jpg" alt="" />
@@ -185,7 +195,7 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href="#" aria-label="Add to cart"><i class="fas fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
           <img src="img/products/f8.jpg" alt="" />
@@ -201,18 +211,18 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href="#" aria-label="Add to cart"><i class="fas fa-shopping-cart cart"></i></a>
         </div>
       </div>
     </section>
 
     <section id="banner" class="section-m1">
       <h4>Repair Service</h4>
-      <h2>Up To <span>70% off</span> All T-Shirts & Accessoriess</h2>
-      <button class="normal">Explore More</button>
+      <h2>Up To <span>70% off</span> All T-Shirts &amp; Accessories</h2>
+      <button type="button" class="normal">Explore More</button>
     </section>
 
-    <section id="product1" class="section-p1">
+    <section id="new-arrivals" class="section-p1">
       <h2>New Arrivals</h2>
       <p>Summer Collection New Modern Design</p>
       <div class="pro-container">
@@ -230,7 +240,7 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href="#" aria-label="Add to cart"><i class="fas fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
           <img src="img/products/n2.jpg" alt="" />
@@ -246,7 +256,7 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href="#" aria-label="Add to cart"><i class="fas fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
           <img src="img/products/n3.jpg" alt="" />
@@ -262,7 +272,7 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href="#" aria-label="Add to cart"><i class="fas fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
           <img src="img/products/n4.jpg" alt="" />
@@ -278,7 +288,7 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href="#" aria-label="Add to cart"><i class="fas fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
           <img src="img/products/n5.jpg" alt="" />
@@ -294,7 +304,7 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href="#" aria-label="Add to cart"><i class="fas fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
           <img src="img/products/n6.jpg" alt="" />
@@ -310,7 +320,7 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href="#" aria-label="Add to cart"><i class="fas fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
           <img src="img/products/n7.jpg" alt="" />
@@ -326,7 +336,7 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href="#" aria-label="Add to cart"><i class="fas fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
           <img src="img/products/n8.jpg" alt="" />
@@ -342,7 +352,7 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href="#" aria-label="Add to cart"><i class="fas fa-shopping-cart cart"></i></a>
         </div>
       </div>
     </section>
@@ -352,13 +362,13 @@
         <h4>crazy deals</h4>
         <h2>buy 1 get 1 free</h2>
         <span>The best classic dress is on sale at cars</span>
-        <button class="white">Learn More</button>
+        <button type="button" class="white">Learn More</button>
       </div>
       <div class="banner-box banner-box2">
         <h4>spring/summer</h4>
         <h2>upcoming seasons</h2>
         <span>The best classic dress is on sale at cars</span>
-        <button class="white">Collection</button>
+        <button type="button" class="white">Collection</button>
       </div>
     </section>
 
@@ -386,8 +396,12 @@
         </p>
       </div>
       <div class="form">
-        <input type="email" placeholder="Your Email Address" />
-        <button class="normal">Sign Up</button>
+        <input
+          type="email"
+          placeholder="Your Email Address"
+          aria-label="Your email address"
+        />
+        <button type="button" class="normal">Sign Up</button>
       </div>
     </section>
 
@@ -416,7 +430,7 @@
       <div class="col">
         <h4>My Account</h4>
         <a href="#">Sign In</a>
-        <a href="#">View Cart</a>
+        <a href="cart.html">View Cart</a>
         <a href="#">My Wishlist</a>
         <a href="#">Track My Orders</a>
         <a href="#">Help</a>
